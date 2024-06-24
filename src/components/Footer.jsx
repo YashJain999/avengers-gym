@@ -2,9 +2,29 @@
 import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook, faTwitter, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { BsHouse, BsEnvelope, BsTelephone } from "react-icons/bs";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
+  const handleEmailClick = () => {
+    const email = 'contact@avengersgym.in';
+    const subject = 'Subject';
+    const body = 'Body';
+    
+    const link = document.createElement('a');
+    link.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    link.target = '_blank';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="bg-black">
       <footer className="text-white text-center text-lg-start bg-dark">
@@ -28,7 +48,9 @@ const Footer = () => {
               <ul className="fa-ul" style={{ marginLeft: "1.65em" }}>
                 <li className="mb-3">
                   <span className="fa-li">
-                    <i className="fas fa-home"></i>
+                    <i>
+                      <BsHouse />
+                    </i>
                   </span>
                   <span className="ms-2">
                     123 Fitness Ave, Andheri East, Mumbai, Maharashtra 400053,
@@ -37,13 +59,23 @@ const Footer = () => {
                 </li>
                 <li className="mb-3">
                   <span className="fa-li">
-                    <i className="fas fa-envelope"></i>
+                    <i>
+                      <BsEnvelope />
+                    </i>
                   </span>
-                  <span className="ms-2">contact@avengersgym.in</span>
+                  <span 
+            className="ms-2" 
+            style={{ textDecoration: 'underline', cursor: 'pointer' }} 
+            onClick={handleEmailClick}
+          >
+            contact@avengersgym.in
+          </span>
                 </li>
                 <li className="mb-3">
                   <span className="fa-li">
-                    <i className="fas fa-phone"></i>
+                    <i>
+                      <BsTelephone />
+                    </i>
                   </span>
                   <span className="ms-2">+91 22 1234 5678</span>
                 </li>
@@ -70,26 +102,32 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-      <div className="flex items-sm-right justify-between text-sm-center">
-        <a href="https://facebook.com/" className="text-white me-3">
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a href="https://instagram.com/" className="text-white me-3">
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
-        <a href="https://x.com/?lang=en/" className="text-white me-3">
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a href="https://www.linkedin.com/" className="text-white me-3">
-          <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-        <a href="https://www.youtube.com/" className="text-white me-3">
-          <FontAwesomeIcon icon={faYoutube} />
-        </a>
-      </div>
-       <p class="text-sm-center"> &copy; 2024 Avengers Fitness Gym. All Rights Reserved</p>
-    </div>
+        <div
+          className="flex justify-between items-center p-3"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          <div className="flex items-sm-right justify-between text-sm-center">
+            <a href="https://facebook.com/" className="text-white me-3">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="https://instagram.com/" className="text-white me-3">
+            <AiFillInstagram />
+            </a>
+            <a href="https://x.com/?lang=en/" className="text-white me-3">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="https://www.linkedin.com/" className="text-white me-3">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://www.youtube.com/" className="text-white me-3">
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+          </div>
+          <p class="text-sm-center">
+            {" "}
+            &copy; 2024 Avengers Fitness Gym. All Rights Reserved
+          </p>
+        </div>
       </footer>
     </div>
   );

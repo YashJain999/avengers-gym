@@ -1,0 +1,41 @@
+.packages-description {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .packages-description h2 {
+    margin-bottom: 15px;
+  }
+  
+  .benefits-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .benefits-list li svg {
+    margin-right: 10px;
+  }
+  
+  .packages-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    /* text-align: center; */
+  }
+  
+  .icon-hover {
+    cursor: pointer;
+  }
+  
+  .pricing:hover{
+    cursor: pointer;
+  }
