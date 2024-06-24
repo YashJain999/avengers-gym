@@ -4,6 +4,7 @@ import GymLanding from './GymLanding';
 function App() {
   return (
     <div className="">
+      
       <GymLanding />
     </div>
   );
