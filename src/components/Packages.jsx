@@ -6,8 +6,8 @@ import HoverableIcon from "./HoverableIcon";
 
 const Packages = () => {
   return (
-    <>
-      <div className="packages-description">
+    <div className="d-flex flex-column" style={{gap:"100px"}}>
+      <div className="packages-description mt-5">
         <h2>Choose the Plan That's Right for You</h2>
         <ul className="benefits-list">
           <li><BsCheck /> Unlimited access to all gym equipment, cardio machines, weight training areas, and other facilities.</li>
@@ -80,7 +80,7 @@ const Packages = () => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 

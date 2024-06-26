@@ -16,11 +16,11 @@ const Footer = () => {
     const email = 'contact@avengersgym.in';
     const subject = 'Subject';
     const body = 'Body';
-    
+
     const link = document.createElement('a');
     link.href = `mailto:${email}?subject=${subject}&body=${body}`;
     link.target = '_blank';
-    
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -63,13 +63,13 @@ const Footer = () => {
                       <BsEnvelope />
                     </i>
                   </span>
-                  <span 
-            className="ms-2" 
-            style={{ textDecoration: 'underline', cursor: 'pointer' }} 
-            onClick={handleEmailClick}
-          >
-            contact@avengersgym.in
-          </span>
+                  <span
+                    className="ms-2"
+                    style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                    onClick={handleEmailClick}
+                  >
+                    contact@avengersgym.in
+                  </span>
                 </li>
                 <li className="mb-3">
                   <span className="fa-li">
@@ -111,7 +111,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a href="https://instagram.com/" className="text-white me-3">
-            <AiFillInstagram />
+              <AiFillInstagram />
             </a>
             <a href="https://x.com/?lang=en/" className="text-white me-3">
               <FontAwesomeIcon icon={faTwitter} />
