@@ -11,7 +11,7 @@ import {
 import { BsHouse, BsEnvelope, BsTelephone } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 
-const Footer = () => {
+const Footer = ({ scrollspyHeading6 }) => {
   const handleEmailClick = () => {
     const email = 'contact@avengersgym.in';
     const subject = 'Subject';
@@ -26,7 +26,7 @@ const Footer = () => {
     document.body.removeChild(link);
   };
   return (
-    <div className="bg-black">
+    <div id={scrollspyHeading6} className="bg-black">
       <footer className="text-white text-center text-lg-start bg-dark">
         <div className="container p-4">
           <div className="row mt-4">
@@ -123,7 +123,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faYoutube} />
             </a>
           </div>
-          <p class="text-sm-center">
+          <p className="text-sm-center">
             {" "}
             &copy; 2024 Avengers Fitness Gym. All Rights Reserved
           </p>

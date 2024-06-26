@@ -21,51 +21,54 @@ const GymLanding = () => {
 
   return (
     <>
-      <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-success'>
-        <img src={bg} alt='logo' style={{ backgroundRepeat: 'no-repeat', }} />
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 fw-bold" href="#scrollspyHeading1">Welcome</a>
+      <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-white'>
+        <div className='bg-image hover-zoom'>
+          <img src={bg} className="" alt='logo' style={{ backgroundRepeat: 'no-repeat', }} />
+        </div>
+        <ul className="nav nav-pills justify-content-end">
+          <li className="nav-item">
+            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading1">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 fw-bold" href="#scrollspyHeading2">Our Trainers</a>
+          <li className="nav-item">
+            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading2">Our Trainers</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 fw-bold" href="#scrollspyHeading3">Accessories</a>
+          <li className="nav-item">
+            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading3">Accessories</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 fw-bold" href="#scrollspyHeading4">Nutrition Plans</a>
+          <li className="nav-item">
+            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading4">Nutrition Plans</a>
           </li>
-          <li class="nav-item" >
-            <a class="nav-link text-white fs-5 fw-bold" href="#scrollspyHeading5" >Memberships</a>
+          <li className="nav-item" >
+            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading5" >Memberships</a>
           </li>
-          <li class="nav-item" >
-            <a class="nav-link text-white fs-5 fw-bold" href="#scrollspyHeading6">Schedule</a>
+          <li className="nav-item" >
+            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading6">Schedule</a>
           </li>
         </ul>
       </nav>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" className="scrollspy-example" tabIndex="0">
         <div id="scrollspyHeading1" style={{ height: "700px" }}>
           <Header showModal={handleShowModal} />
           <RegistrationForm show={showModal} handleClose={handleCloseModal} />
         </div>
-        <div id="scrollspyHeading2" style={{ height: "700px" }}>
+        <div id='scrollspyHeading2' style={{ height: "700px" }}>
           <OurTrainers />
         </div>
-        <div id="scrollspyHeading3" style={{ height: "700px" }}>
-          <GymGears />
+        <div id='scrollspyHeading3' style={{ height: "700px" }}>
+          <GymGears/>
         </div>
-        <div id="scrollspyHeading4" style={{ height: "700px" }}>
+        <div id='scrollspyHeading4' style={{ height: "1000px" }}>
           <NutritionPlans />
         </div>
-        <div id="scrollspyHeading5" style={{ height: "700px" }}>
+        <div id='scrollspyHeading5' style={{ height: "700px" }}>
           <Packages />
         </div>
-        <div id="scrollspyHeading5" style={{ height: "700px" }}>
+        <div style={{ height: "700px" }}>
           <Offers />
         </div>
-        <div id="scrollspyHeading6" style={{ height: "" }}>
-          <ToastContainer
+        <div id='scrollspyHeading6' style={{ height: "" }}>
+          <Footer id={"scrollspyHeading6"} />
+          {/* <ToastContainer
             position="bottom-right"
             autoClose={false}
             hideProgressBar
@@ -75,8 +78,7 @@ const GymLanding = () => {
             pauseOnFocusLoss
             draggable
             pauseOnHover
-          />
-          <Footer />
+          /> */}
         </div>
       </div>
     </>

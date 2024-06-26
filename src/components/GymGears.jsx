@@ -1,8 +1,20 @@
 import React from 'react'
-
-const GymGears = () => {
+import ggimage from '../assets/images/equipments.jpg'
+const GymGears = ({ scrollspyHeading3 }) => {
   return (
-    <div>GymGears</div>
+    <div id={scrollspyHeading3} style={{
+      height: "100vh",
+      // width: "100%",
+      backgroundImage:
+          `url(${ggimage})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+  }}>Lorem ipsum, dolor sit amet consectetucum voluptatibus?
+  
+  <div className='h-100'>
+
+  </div>
+  </div>
   )
 }
 

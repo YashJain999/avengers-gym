@@ -7,7 +7,7 @@ import './Offers.css';
 import { Route } from 'react-router-dom';
 import Packages from './Packages';
 
-const Offers = () => {
+const Offers = ({scrollspyHeading5}) => {
   useEffect(() => {
     // Trigger the notification when the component mounts (page reloads)
     notify();
