@@ -72,7 +72,7 @@ const Packages = () => {
             </tr>
             <tr>
               <th scope="row">Pricing</th>
-              <td> <i className="pricing">₹2,000</i></td>
+              <td><i className="pricing">₹2,000</i></td>
               <td><i className="pricing">₹5,500</i></td>
               <td><i className="pricing">₹20,000</i></td>
               <td><i className="pricing">₹35,000</i></td>

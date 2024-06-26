@@ -1,0 +1,48 @@
+/* src/Offers.css */
+
+.offer-toast {
+    background-color: black; /* Example background color */
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer-toast img {
+    margin-bottom: 10px;
+  }
+  
+  .offer-toast span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .offer-button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .offer-button:hover {
+    background-color: #e65100;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .close-button:hover {
+    color: #ccc;
+  }
+  

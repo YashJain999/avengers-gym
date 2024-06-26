@@ -7,7 +7,9 @@ import NutritionPlans from './components/NutritionPlans';
 import OurTrainers from './components/OurTrainers';
 import RegistrationForm from './components/RegistrationForm';
 import bg from './assets/images/file.jpg';
-
+import Offers from './components/Offers';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const GymLanding = () => {
 
@@ -16,8 +18,8 @@ const GymLanding = () => {
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
-  return (
 
+  return (
     <>
       <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-success'>
         <img src={bg} alt='logo' style={{ backgroundRepeat: 'no-repeat', }} />
@@ -59,7 +61,21 @@ const GymLanding = () => {
         <div id="scrollspyHeading5" style={{ height: "700px" }}>
           <Packages />
         </div>
+        <div id="scrollspyHeading5" style={{ height: "700px" }}>
+          <Offers />
+        </div>
         <div id="scrollspyHeading6" style={{ height: "" }}>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={false}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
           <Footer />
         </div>
       </div>
