@@ -6,8 +6,8 @@ import GymGears from './components/GymGears';
 import NutritionPlans from './components/NutritionPlans';
 import OurTrainers from './components/OurTrainers';
 import RegistrationForm from './components/RegistrationForm';
-import bg from './assets/images/file.jpg';
-import Offers from './components/Offers';
+import bg from './assets/images/Logo.svg';
+import {Offers, HeaderOffer} from './components/Offers';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -17,13 +17,14 @@ const GymLanding = () => {
 
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
-
+  const endTime = "2024-07-01T00:00:00";
 
   return (
     <>
-      <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-white'>
+    <HeaderOffer endTime={endTime}/>
+      <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-secondary bg-gradient'>
         <div className='bg-image hover-zoom'>
-          <img src={bg} className="" alt='logo' style={{ backgroundRepeat: 'no-repeat', }} />
+          <img src={bg} className="ps-4" alt='logo' style={{ backgroundRepeat: 'no-repeat', height: '80px',}} />
         </div>
         <ul className="nav nav-pills justify-content-end">
           <li className="nav-item">
@@ -68,7 +69,8 @@ const GymLanding = () => {
         </div>
         <div id='scrollspyHeading6' style={{ height: "" }}>
           <Footer id={"scrollspyHeading6"} />
-          {/* <ToastContainer
+          <ToastContainer
+
             position="bottom-right"
             autoClose={false}
             hideProgressBar
@@ -78,7 +80,7 @@ const GymLanding = () => {
             pauseOnFocusLoss
             draggable
             pauseOnHover
-          /> */}
+          />
         </div>
       </div>
     </>
