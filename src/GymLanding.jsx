@@ -22,27 +22,27 @@ const GymLanding = () => {
   return (
     <>
       <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-white'>
-        <div className='bg-image hover-zoom'>
+        <div className='bg-image'>
           <img src={bg} className="" alt='logo' style={{ backgroundRepeat: 'no-repeat', }} />
         </div>
-        <ul className="nav nav-pills justify-content-end">
-          <li className="nav-item">
-            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading1">Home</a>
+        <ul className="nav nav-pills justify-content-end ">
+          <li className="nav-item ">
+            <a className=" nav-link text-dark fw-bold" href="#scrollspyHeading1">Home</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading2">Our Trainers</a>
+          <li className="nav-item ">
+            <a className="  nav-link text-dark  fw-bold" href="#scrollspyHeading2">Our Trainers</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading3">Accessories</a>
+          <li className="nav-item ">
+            <a className=" nav-link text-dark  fw-bold" href="#scrollspyHeading3">Accessories</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading4">Nutrition Plans</a>
+          <li className="nav-item ">
+            <a className="  nav-link text-dark  fw-bold" href="#scrollspyHeading4">Nutrition Plans</a>
           </li>
-          <li className="nav-item" >
-            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading5" >Memberships</a>
+          <li className="nav-item " >
+            <a className="  nav-link text-dark  fw-bold" href="#scrollspyHeading5" >Memberships</a>
           </li>
-          <li className="nav-item" >
-            <a className="nav-link text-dark fs-5 fw-bold" href="#scrollspyHeading6">Schedule</a>
+          <li className="nav-item " >
+            <a className="  nav-link text-dark  fw-bold" href="#scrollspyHeading6">Schedule</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +55,7 @@ const GymLanding = () => {
           <OurTrainers />
         </div>
         <div id='scrollspyHeading3' style={{ height: "700px" }}>
-          <GymGears/>
+          <GymGears />
         </div>
         <div id='scrollspyHeading4' style={{ height: "1000px" }}>
           <NutritionPlans />
