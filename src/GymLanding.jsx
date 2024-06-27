@@ -17,16 +17,13 @@ const GymLanding = () => {
 
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
-
   const endTime = "2024-07-01T00:00:00";
-
 
   return (
     <>
     <HeaderOffer endTime={endTime}/>
       <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-secondary bg-gradient'>
         <div className='bg-image hover-zoom'>
-          
           <img src={bg} className="ps-4" alt='logo' style={{ backgroundRepeat: 'no-repeat', height: '80px',}} />
         </div>
         <ul className="nav nav-pills justify-content-end">
@@ -61,7 +58,7 @@ const GymLanding = () => {
         <div id='scrollspyHeading3' style={{ height: "700px" }}>
           <GymGears/>
         </div>
-        <div id='scrollspyHeading4' style={{ height: "950px" }}>
+        <div id='scrollspyHeading4' style={{ height: "1000px" }}>
           <NutritionPlans />
         </div>
         <div id='scrollspyHeading5' style={{ height: "700px" }}>
@@ -73,6 +70,7 @@ const GymLanding = () => {
         <div id='scrollspyHeading6' style={{ height: "" }}>
           <Footer id={"scrollspyHeading6"} />
           <ToastContainer
+
             position="bottom-right"
             autoClose={false}
             hideProgressBar

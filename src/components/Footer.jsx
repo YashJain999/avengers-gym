@@ -11,22 +11,22 @@ import {
 import { BsHouse, BsEnvelope, BsTelephone } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 
-const Footer = () => {
+const Footer = ({ scrollspyHeading6 }) => {
   const handleEmailClick = () => {
     const email = 'contact@avengersgym.in';
     const subject = 'Subject';
     const body = 'Body';
-    
+
     const link = document.createElement('a');
     link.href = `mailto:${email}?subject=${subject}&body=${body}`;
     link.target = '_blank';
-    
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
   return (
-    <div className="bg-black">
+    <div id={scrollspyHeading6} className="bg-black">
       <footer className="text-white text-center text-lg-start bg-dark">
         <div className="container p-4">
           <div className="row mt-4">
@@ -63,13 +63,13 @@ const Footer = () => {
                       <BsEnvelope />
                     </i>
                   </span>
-                  <span 
-            className="ms-2" 
-            style={{ textDecoration: 'underline', cursor: 'pointer' }} 
-            onClick={handleEmailClick}
-          >
-            contact@avengersgym.in
-          </span>
+                  <span
+                    className="ms-2"
+                    style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                    onClick={handleEmailClick}
+                  >
+                    contact@avengersgym.in
+                  </span>
                 </li>
                 <li className="mb-3">
                   <span className="fa-li">
@@ -111,7 +111,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a href="https://instagram.com/" className="text-white me-3">
-            <AiFillInstagram />
+              <AiFillInstagram />
             </a>
             <a href="https://x.com/?lang=en/" className="text-white me-3">
               <FontAwesomeIcon icon={faTwitter} />
@@ -123,7 +123,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faYoutube} />
             </a>
           </div>
-          <p class="text-sm-center">
+          <p className="text-sm-center">
             {" "}
             &copy; 2024 Avengers Fitness Gym. All Rights Reserved
           </p>

@@ -38,7 +38,7 @@ const Modal = ({ id, title, options }) => {
     );
 };
 
-const NutritionPlans = () => {
+const NutritionPlans = ({scrollspyHeading4}) => {
     const breakfastVegOptions = [
         { text: "Poha with vegetables: A light, nutritious dish made from flattened rice and mixed vegetables.", image: "https://palatesdesire.com/wp-content/uploads/2022/07/Vegetable-diet-poha-recipe@palates-desire.jpg" },
         { text: "Paneer Paratha: Indian flatbread stuffed with cottage cheese, providing a good source of protein.", image: "https://www.livingsmartandhealthy.com/wp-content/uploads/2024/01/palak-paneer-paratha3-500x500.jpg" },
@@ -96,7 +96,7 @@ const NutritionPlans = () => {
     ];
     
     return (
-        <div className="container py-5 col-xs-6">
+        <div id="scrollspyHeading4" className="container py-5 col-xs-6">
             <h2 className="text-center mb-5">Nutrition Plans</h2>
 
             <div className="row">

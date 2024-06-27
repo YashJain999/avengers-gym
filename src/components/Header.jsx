@@ -41,7 +41,7 @@ const Header = ({ showModal ,ok}) => {
         },
         [isdelete, loop, speed, welcome]
     );
-
+  
     return (
         <div id={ok} className='w-100 h-100'>
             <main className='w-100 h-100 d-flex flex-column align-items-center justify-content-center p-2 z-0' style={{

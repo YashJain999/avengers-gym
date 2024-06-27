@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Offers.css';
 
 
-const Offers = () => {
+const Offers = ({scrollspyHeading5}) => {
   useEffect(() => {
     // Trigger the notification when the component mounts (page reloads)
     notify();

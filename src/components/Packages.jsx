@@ -4,11 +4,11 @@ import "./Packages.css";
 import { BsCheck} from "react-icons/bs";
 import HoverableIcon from "./HoverableIcon";
 
-const Packages = () => {
+const Packages = ({scrollspyHeading5}) => {
   return (
-    <>
-      <div className="packages-description">
-        <h2>Choose the Plan That's Right for You</h2>
+    <div id={scrollspyHeading5} className="d-flex flex-column">
+      <div className="packages-description mt-5">
+        <h2>Choose the Subscription That's Right for You !!</h2>
         <ul className="benefits-list">
           <li><BsCheck /> Unlimited access to all gym equipment, cardio machines, weight training areas, and other facilities.</li>
           <li><BsCheck /> Change or cancel your plan anytime.</li>
@@ -80,7 +80,7 @@ const Packages = () => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 
