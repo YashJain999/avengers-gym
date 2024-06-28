@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Packages from './components/Packages';
 import Header from './components/Header';
@@ -6,12 +6,18 @@ import GymGears from './components/GymGears';
 import NutritionPlans from './components/NutritionPlans';
 import OurTrainers from './components/OurTrainers';
 import RegistrationForm from './components/RegistrationForm';
-import bg from './assets/images/Logo.svg';
-import {Offers, HeaderOffer} from './components/Offers';
+import bg from './assets/images/lougo.png';
+import { Offers, HeaderOffer } from './components/Offers';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import aos from "aos";
+import 'aos/dist/aos.css'
 
 const GymLanding = () => {
+
+  useEffect(() => {
+    aos.init({ duration: 1000 });
+  }, [])
 
   const [showModal, setShowModal] = useState(false);
 
@@ -21,10 +27,10 @@ const GymLanding = () => {
 
   return (
     <>
-    <HeaderOffer endTime={endTime}/>
-      <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-secondary bg-gradient'>
-        <div className='bg-image hover-zoom'>
-          <img src={bg} className="ps-4" alt='logo' style={{ backgroundRepeat: 'no-repeat', height: '80px',}} />
+      <HeaderOffer endTime={endTime} />
+      <nav id="navbar-example2" className='w-100 sticky-top d-flex flex-row align-items-center justify-content-between bg-secondary bg-gradient shadow-lg '>
+        <div className='bg-image'>
+          <img src={bg} className="ps-4" alt='logo' style={{ height: '80px' }} />
         </div>
         <ul className="nav nav-pills justify-content-end ">
           <li className="nav-item ">

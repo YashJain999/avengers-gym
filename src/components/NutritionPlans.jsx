@@ -96,9 +96,8 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
     ];
 
     return (
-        <div id="scrollspyHeading4" className="container py-5 col-xs-6">
-            <h2 className="text-center mb-5">Nutrition Plans</h2>
-
+        <div id={scrollspyHeading4} className="container py-5 col-xs-6">
+            <h2 data-aos="zoom-out-down" className="text-center mt-5">Nutrition Plans</h2>
             <div className="row">
                 <div className="col-md-6">
                     <h3 className="mb-4 text-center">Breakfast</h3>
@@ -180,7 +179,7 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
             <Modal id="snacksNonVegModal" title="Non-Vegetarian Snacks Options" options={snacksNonVegOptions} />
 
             <div className="container py-5">
-  <h2 className="text-center mb-5">Supplements</h2>
+  <h2 data-aos="zoom-out-down" className="text-center mb-5">Supplements</h2>
   <div className="row justify-content-between">
     <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '23rem'}}>
       <img className="card-img-top" src="https://www.getsupp.com/static/media/__resized/images/products/SI8PNAE7EP6K7MS9H-f8f64806-2e4b-4e62-b463-386d96ad184a-thumbnail_webp-1080x1080-70.webp" alt="Whey Protein" />

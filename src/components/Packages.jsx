@@ -8,7 +8,9 @@ const Packages = ({scrollspyHeading5}) => {
   return (
     <div id={scrollspyHeading5} className="d-flex flex-column">
       <div className="packages-description mt-5">
-        <h2>Choose the Subscription That's Right for You !!</h2>
+        <h2 data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="mt-5">Choose the Subscription That's Right for You !!</h2>
         <ul className="benefits-list">
           <li><BsCheck /> Unlimited access to all gym equipment, cardio machines, weight training areas, and other facilities.</li>
           <li><BsCheck /> Change or cancel your plan anytime.</li>
