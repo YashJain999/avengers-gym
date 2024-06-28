@@ -9,7 +9,7 @@ const GymGears = ({ scrollspyHeading3 }) => {
           `url(${ggimage})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-  }}>Lorem ipsum, dolor sit amet consectetucum voluptatibus?
+  }}>
   
   <div className='h-100'>
 

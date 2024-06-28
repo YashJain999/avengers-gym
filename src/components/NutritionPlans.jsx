@@ -180,50 +180,45 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
             <Modal id="snacksNonVegModal" title="Non-Vegetarian Snacks Options" options={snacksNonVegOptions} />
 
             <div className="container py-5">
-                <h2 className="text-center mb-5">Supplements</h2>
-                <div className="row justify-content-between">
-                    <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '32rem' }}>
-                        <img className="card-img-top" src="https://www.getsupp.com/static/media/__resized/images/products/SI8PNAE7EP6K7MS9H-f8f64806-2e4b-4e62-b463-386d96ad184a-thumbnail_webp-1080x1080-70.webp" alt="Whey Protein" />
-                        <div className="card-body">
-                            <h5 className="card-title">Whey Protein</h5>
-                            <p className="card-text">Whey protein is the protein from whey, the watery portion of milk that separates from the curds when making cheese.</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.getsupp.com/muscleblaze-beginners-whey-protein-_-skimmed-milk-powder-whey-protein-concentrate-for-faster-muscle-recovery-and-improved-strength/RODHGFS4OE/sp?gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxUeA1V8Re7ko42DIfkZfepnkr1CtVHriw4lmTznbSXo5PJfvudKMWxoCSRQQAvD_BwE" className="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                    <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '32rem' }}>
-                        <img className="card-img-top" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTb5-ULaBAiEo1_FjBFJ1mznx3Vr5VhV4tupohRGyPq8-YW8_NZcY3_GqWjNp2KVoG-WZVzNiNvEjlo5S0d70yC-KNCzuV97Ji_j3r0U-F2Ffa9pSPeoNvdAp_3ypfv8h_nYJQcZnqT6g&usqp=CAc" alt="Creatine Monohydrate" />
-                        <div className="card-body">
-                            <h5 className="card-title">Creatine Monohydrate</h5>
-                            <p className="card-text">The monohydrate form of creatine similar or identical to endogenous creatine produced in the liver, kidneys, and pancreas.</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.muscleblaze.com/sv/muscleblaze-creatine-monohydrate-creamp/SP-33852?navKey=VRNT-63864&utm_source=google&utm_medium=cpc&utm_campaign=MB.com_Creatine_ATL_PMAX_06052024&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxctA0E6pah3kSICw2PLMUcJ0PmWctu4Ae5oyjGL7pFgUbaat8AtGqBoCzS4QAvD_BwE" className="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                    <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '32rem' }}>
-                        <img className="card-img-top" src="https://img7.hkrtcdn.com/20569/prd_2056826-HealthKart-HK-Vitals-Multivitamin-with-MultimineralTaurine-Ginseng-Extract-90-tablets-Unflavoured_o.jpg" alt="Multivitamins Tablets" />
-                        <div className="card-body">
-                            <h5 className="card-title">Multivitamins Tablets</h5>
-                            <p className="card-text">Whey protein is the protein from whey, the watery portion of milk that separates from the curds when making cheese.</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.healthkart.com/sv/healthkart-hk-vitals-multivitamin-with-multimineral/SP-39873?navKey=VRNT-77418&utm_source=google&utm_medium=cpc&utm_campaign=_BR_HK.com_MB_BTL_PMAX_11052023&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQAFMpJfDLXl6mu5Zmi0xBEX9HkL8RBpAMz8YXoVFcrjtClYjiORrhoCijwQAvD_BwE" className="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                    <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '32rem' }}>
-                        <img className="card-img-top" src="https://nisupplements.com/cdn/shop/products/bc1_800x.png?v=1669727789" alt="Branched-chain amino acids (BCAAs)" />
-                        <div className="card-body">
-                            <h5 className="card-title">Branched-chain amino acids (BCAAs)</h5>
-                            <p className="card-text">This is essential amino acids (leucine, isoleucine, and valine) that are vital for muscle protein synthesis.</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://boltnutritions.com/products/bcaa?variant=47684240867602&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxc7ekF8-Ubqp8pLJMrevDHXvhDESl3hmID6EzWrdDJrDIg0UGbHp4hoCSFwQAvD_BwE" className="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                    <div className="card mb-3 col-sm-6" style={{ width: '15rem', height: '32rem' }}>
-                        <img className="card-img-top" src="https://bigmusclesnutrition.com/cdn/shop/files/Front_1.png?v=1697707469c" alt="Beta-alanine" />
-                        <div className="card-body">
-                            <h5 className="card-title">Beta-alanine</h5>
-                            <p className="card-text">Beta-alanine is an amino acid that increases carnosine levels in muscles, buffering acid and delaying fatigue.</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://bigmusclesnutrition.com/products/beta-alanine?variant=33430176956515&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=Google&utm_medium=cpc&utm_campaign=Sok_Pmax_TRoAS_290422&utm_content=&utm_term=&placement=&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQWzTiXFlumWMApJEM1oqj583CtNqutq9iDsOujwMWFuHAjU1qJXxhoCujMQAvD_BwE" className="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <h2 className="text-center mb-5">Supplements</h2>
+  <div className="row justify-content-between">
+    <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '23rem'}}>
+      <img className="card-img-top" src="https://www.getsupp.com/static/media/__resized/images/products/SI8PNAE7EP6K7MS9H-f8f64806-2e4b-4e62-b463-386d96ad184a-thumbnail_webp-1080x1080-70.webp" alt="Whey Protein" />
+      <div className="card-body d-flex flex-column justify-content-center align-items-center ">
+        <h5 className="card-title">Whey Protein</h5>
+        <a className="btn btn-primary mt-5" target="_blank" rel="noopener noreferrer" href="https://www.getsupp.com/muscleblaze-beginners-whey-protein-_-skimmed-milk-powder-whey-protein-concentrate-for-faster-muscle-recovery-and-improved-strength/RODHGFS4OE/sp?gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxUeA1V8Re7ko42DIfkZfepnkr1CtVHriw4lmTznbSXo5PJfvudKMWxoCSRQQAvD_BwE" >Buy Now</a>
+      </div>
+    </div>
+    <div className="card mb-3 col-sm-3" style={{ width: '15rem',height: '23rem' }}>
+      <img className="card-img-top" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTb5-ULaBAiEo1_FjBFJ1mznx3Vr5VhV4tupohRGyPq8-YW8_NZcY3_GqWjNp2KVoG-WZVzNiNvEjlo5S0d70yC-KNCzuV97Ji_j3r0U-F2Ffa9pSPeoNvdAp_3ypfv8h_nYJQcZnqT6g&usqp=CAc" alt="Creatine Monohydrate" />
+      <div className="card-body d-flex flex-column justify-content-center align-items-center">
+        <h5 className="card-title">Creatine Monohydrate</h5>
+        <a className="btn btn-primary mt-4" target="_blank" rel="noopener noreferrer" href="https://www.muscleblaze.com/sv/muscleblaze-creatine-monohydrate-creamp/SP-33852?navKey=VRNT-63864&utm_source=google&utm_medium=cpc&utm_campaign=MB.com_Creatine_ATL_PMAX_06052024&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxctA0E6pah3kSICw2PLMUcJ0PmWctu4Ae5oyjGL7pFgUbaat8AtGqBoCzS4QAvD_BwE" >Buy Now</a>
+      </div>
+    </div>
+    <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '23rem'}}>
+      <img className="card-img-top" src="https://img7.hkrtcdn.com/20569/prd_2056826-HealthKart-HK-Vitals-Multivitamin-with-MultimineralTaurine-Ginseng-Extract-90-tablets-Unflavoured_o.jpg" alt="Multivitamins Tablets" />
+      <div className="card-body d-flex flex-column justify-content-center align-items-center ">
+        <h5 className="card-title">Multivitamins Tablets</h5>
+        <a className="btn btn-primary mt-4" target="_blank" rel="noopener noreferrer" href="https://www.healthkart.com/sv/healthkart-hk-vitals-multivitamin-with-multimineral/SP-39873?navKey=VRNT-77418&utm_source=google&utm_medium=cpc&utm_campaign=_BR_HK.com_MB_BTL_PMAX_11052023&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQAFMpJfDLXl6mu5Zmi0xBEX9HkL8RBpAMz8YXoVFcrjtClYjiORrhoCijwQAvD_BwE" >Buy Now</a>
+      </div>
+    </div>
+    <div className="card mb-3 col-sm-3" style={{ width: '15rem',height: '23rem' }}>
+      <img className="card-img-top" src="https://nisupplements.com/cdn/shop/products/bc1_800x.png?v=1669727789" alt="Branched-chain amino acids (BCAAs)" />
+      <div className="card-body d-flex flex-column justify-content-center align-items-center ">
+        <h5 className="card-title">Branched-chain amino acids (BCAAs)</h5>
+        <a className="btn btn-primary mt-1" target="_blank" rel="noopener noreferrer" href="https://boltnutritions.com/products/bcaa?variant=47684240867602&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxc7ekF8-Ubqp8pLJMrevDHXvhDESl3hmID6EzWrdDJrDIg0UGbHp4hoCSFwQAvD_BwE" >Buy Now</a>
+      </div>
+    </div>
+    <div className="card mb-3 col-sm-6" style={{ width: '15rem',height: '23rem' }}>
+      <img className="card-img-top" src="https://bigmusclesnutrition.com/cdn/shop/files/Front_1.png?v=1697707469c" alt="Beta-alanine" />
+      <div className="card-body d-flex flex-column justify-content-center align-items-center " >
+        <h5 className="card-title">Beta-alanine</h5>
+        <a className="btn btn-primary mt-5" target="_blank" rel="noopener noreferrer" href="https://bigmusclesnutrition.com/products/beta-alanine?variant=33430176956515&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=Google&utm_medium=cpc&utm_campaign=Sok_Pmax_TRoAS_290422&utm_content=&utm_term=&placement=&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQWzTiXFlumWMApJEM1oqj583CtNqutq9iDsOujwMWFuHAjU1qJXxhoCujMQAvD_BwE">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
         </div>
