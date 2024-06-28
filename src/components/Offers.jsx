@@ -21,7 +21,7 @@ const Offers = ({}) => {
         />
         <br />
         <span>Refer a friend and get a free month's membership or discounted personal training sessions!</span>
-        <button onClick={handleClick} className="offer-button">DO IT NOW!</button>
+        <button className="offer-button"><a href="#scrollspyHeading5">DO IT NOW!</a></button>
         <button className="close-button" onClick={() => toast.dismiss()}>×</button>
       </div>,
       {
@@ -37,15 +37,15 @@ const Offers = ({}) => {
     );
   };
 
-  const handleClick = () => {
-    // Scroll to Packages section
-    const packagesSection = document.getElementById('packages-section'); // Corrected ID
-    if (packagesSection) {
-      packagesSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      alert("Packages section not found.");
-    }
-  };
+  // const handleClick = () => {
+  //   // Scroll to Packages section
+  //   const packagesSection = document.getElementById('packages-section'); // Corrected ID
+  //   if (packagesSection) {
+  //     packagesSection.scrollIntoView({ behavior: 'smooth' });
+  //   } else {
+  //     alert("Packages section not found.");
+  //   }
+  // };
 
   return null; // Component doesn't render anything visible
 }

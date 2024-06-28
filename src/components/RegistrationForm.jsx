@@ -33,7 +33,7 @@ const RegistrationForm = ({ show, handleClose }) => {
                 <h3 for="" class="form-label">Choose Package</h3>
               </div>
               <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
                 <label class="btn btn-outline-primary" for="btnradio1">Monthly</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
@@ -42,8 +42,8 @@ const RegistrationForm = ({ show, handleClose }) => {
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
                 <label class="btn btn-outline-primary" for="btnradio3">Anually</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
-                <label class="btn btn-outline-primary" for="btnradio2">1+1</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradio4">1+1</label>
               </div>
               <hr />
               <div class="form-floating mb-3">

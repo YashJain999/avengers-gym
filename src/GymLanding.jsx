@@ -76,7 +76,6 @@ const GymLanding = () => {
         <div id='scrollspyHeading6' style={{ height: "" }}>
           <Footer id={"scrollspyHeading6"} />
           <ToastContainer
-
             position="bottom-right"
             autoClose={false}
             hideProgressBar
