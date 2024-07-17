@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const GymGears = ({ scrollspyHeading3 }) => {
   const cardStyle = {
-    width: '18rem', 
+    width: '18rem',
     height: '30rem',
-    position: 'relative', 
+    position: 'relative',
   };
 
   const cards = [
@@ -99,7 +99,7 @@ const GymGears = ({ scrollspyHeading3 }) => {
       imgSrc: 'https://contents.mediadecathlon.com/p2437025/7dda281141d2a6e80810199610ccaaa6/p2437025.jpg?format=auto&quality=70&f=650x0',
       link: 'https://www.decathlon.in/p/8767817/sports-massage/acupressure-mat?id=8767817&type=p',
     },
-    
+
     {
       title: 'QUILTED MINI TOTE',
       text: 'Premium quilted fabric',
@@ -114,48 +114,48 @@ const GymGears = ({ scrollspyHeading3 }) => {
   }
 
   return (
-    <div className='d-flex justify-content-center align-items-center' id={scrollspyHeading3} style={{
+    <div className='' id={scrollspyHeading3} style={{
       backgroundImage: `url(https://images.pexels.com/photos/3377405/pexels-photo-3377405.jpeg?cs=srgb&dl=pexels-elina-araja-1743227-3377405.jpg&fm=jpg)`,
       height: '70px',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'
-     }}>
+    }}>
       <div className='container py-5'>
         <h2 className="text-center m-5">Gym Gears and Accessories</h2>
         <b><h4 className="text-center mb-5">Enjoy exclusive discounts on premium gym gears and accessories with our membership packages.</h4></b>
-      <div id="carouselExample1" className="carousel slide px-5" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          {groupedCards.map((group, index) => (
-            <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-              <div className="row">
-                {group.map((card, cardIndex) => (
-                  <div className="col-md-3" key={cardIndex}>
-                    <div className="card mb-4" style={cardStyle}>
-                      <img className="card-img-top rounded mx-auto d-block" src={card.imgSrc} alt="Card cap" />
-                      <div className="card-body d-flex flex-column">
-                        <h5 className="card-title">{card.title}</h5>
-                        <p className="card-text">{card.text}</p>
-                        <a href={card.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary d-flex justify-content-center align-items-center mt-auto">
-                          Explore Now
-                        </a>
+        <div id="carouselExample1" className="carousel slide px-5" data-bs-ride="carousel">
+          <div className="carousel-inner">
+            {groupedCards.map((group, index) => (
+              <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
+                <div className="row">
+                  {group.map((card, cardIndex) => (
+                    <div className="col-md-3" key={cardIndex}>
+                      <div className="card mb-4" style={cardStyle}>
+                        <img className="card-img-top rounded mx-auto d-block" src={card.imgSrc} alt="Card cap" />
+                        <div className="card-body d-flex flex-column">
+                          <h5 className="card-title">{card.title}</h5>
+                          <p className="card-text">{card.text}</p>
+                          <a href={card.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary d-flex justify-content-center align-items-center mt-auto">
+                            Explore Now
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+            <span className="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
-          <span className="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
     </div>
   );
 };

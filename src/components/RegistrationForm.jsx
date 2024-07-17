@@ -65,7 +65,7 @@ const RegistrationForm = ({ show, handleClose }) => {
           </div>
           <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={handleClose} data-bs-dismiss="modal">Close</button>
-            <button type="button" className="btn btn-primary">Sign Up</button>
+            <button type="button" onClick={()=>{alert("Thankyou for registering,for further details our gym staff will contact you")}} className="btn btn-primary">Sign Up</button>
           </div>
         </div>
       </div>
