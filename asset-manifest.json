@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/avengers-gym/static/css/main.5c80d070.css",
+    "main.js": "/avengers-gym/static/js/main.afbb35fa.js",
+    "static/js/453.712b663a.chunk.js": "/avengers-gym/static/js/453.712b663a.chunk.js",
+    "static/media/gymtrainer5.jpg": "/avengers-gym/static/media/gymtrainer5.dcfff5ca7c0ac6122112.jpg",
+    "static/media/gymtrainer9-m.jpg": "/avengers-gym/static/media/gymtrainer9-m.08f799fec72b5aa5618c.jpg",
+    "static/media/gymtrainer4.jpg": "/avengers-gym/static/media/gymtrainer4.feba9209d939677a96f5.jpg",
+    "static/media/gymtrainer7-m.jpg": "/avengers-gym/static/media/gymtrainer7-m.d9d55c600cc75cc5ea3a.jpg",
+    "static/media/gymtrainer6-m.jpg": "/avengers-gym/static/media/gymtrainer6-m.8d93fa5407bfdbe53ae8.jpg",
+    "static/media/gymtrainer8.jpg": "/avengers-gym/static/media/gymtrainer8.adff26baaa7a76b8977e.jpg",
+    "static/media/headerimg.jpg": "/avengers-gym/static/media/headerimg.e2c21ac3551423bb9856.jpg",
+    "static/media/gymtrainer2-m.png": "/avengers-gym/static/media/gymtrainer2-m.087bb3cad7f92b1413a4.png",
+    "static/media/gymtrainer1.png": "/avengers-gym/static/media/gymtrainer1.12548bc1de5d0cae299c.png",
+    "static/media/gymtrainer3.png": "/avengers-gym/static/media/gymtrainer3.0aa6f1a6f096c5235da0.png",
+    "static/media/lougo.png": "/avengers-gym/static/media/lougo.5dd3da03d311384f1322.png",
+    "index.html": "/avengers-gym/index.html",
+    "main.5c80d070.css.map": "/avengers-gym/static/css/main.5c80d070.css.map",
+    "main.afbb35fa.js.map": "/avengers-gym/static/js/main.afbb35fa.js.map",
+    "453.712b663a.chunk.js.map": "/avengers-gym/static/js/453.712b663a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c80d070.css",
+    "static/js/main.afbb35fa.js"
+  ]
+}
