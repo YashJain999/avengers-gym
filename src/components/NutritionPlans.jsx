@@ -38,7 +38,7 @@ const Modal = ({ id, title, options }) => {
     );
 };
 
-const NutritionPlans = ({ scrollspyHeading4 }) => {
+const NutritionPlans = () => {
     const breakfastVegOptions = [
         { text: "Poha with vegetables: A light, nutritious dish made from flattened rice and mixed vegetables.", image: "https://palatesdesire.com/wp-content/uploads/2022/07/Vegetable-diet-poha-recipe@palates-desire.jpg" },
         { text: "Paneer Paratha: Indian flatbread stuffed with cottage cheese, providing a good source of protein.", image: "https://www.livingsmartandhealthy.com/wp-content/uploads/2024/01/palak-paneer-paratha3-500x500.jpg" },
@@ -78,7 +78,7 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
         { text: "Maharashtra Thali: A traditional Maharashtrian platter that includes various dishes such as chicken curry, bhakri (flatbread), rice, and pickles.", image: "https://c.ndtvimg.com/2022-09/so894bio_maharashtra-thali_625x300_19_September_22.jpg?im=FaceCrop,algorithm=dnn,width=384,height=384" },
         { text: "Chicken Biryani: A fragrant and flavorful rice dish made with marinated chicken, spices, and basmati rice, often served with raita and salad.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm9BO9bIrse5UgSxSH32UGPcGSvRHV6_Gf0A&s" },
         { text: "Butter Chicken: A creamy and mildly spiced tomato-based curry made with tender pieces of chicken, often served with naan or rice.", image: "https://c.ndtvimg.com/2021-05/1459bjp8_keto-butter-chicken_625x300_13_May_21.jpg?im=FaceCrop,algorithm=dnn,width=384,height=384" },
-        { text: "Chicken Chettinad: A spicy and aromatic South Indian chicken curry made with a blend of freshly ground spices and coconut.", image: "https://c.ndtvimg.com/2022-03/vei6rmdo_chicken-chettinad_625x300_14_March_22.jpg?im=FaceCrop,algorithm=dnn,width=384,height=384" },
+        { text: "Chicken Chettinad: A spicy and aromatic South Indian chicken curry made with a blend of freshly ground spices and coconut.", image: "https://c.ndtvimg.com/2022-03/vei6rmdo_chicken-chettinad_625x300_14_March_22.jpg?im=FaceCrop,algorithm=dnn,width=384,height=384"},
     ];
 
     const snacksVegOptions = [
@@ -94,10 +94,11 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
         { text: "Chicken Cutlet: Spiced chicken patties, coated with breadcrumbs and fried until golden and crispy.", image: "https://c.ndtvimg.com/2022-03/n5t86eqg_cutlet_625x300_09_March_22.jpg?im=FaceCrop,algorithm=dnn,width=384,height=384" },
         { text: "Fish Cutlet: Flavorful and crispy fish cutlets made with spiced fish, potatoes, and breadcrumbs, fried to perfection.", image: "https://c.ndtvimg.com/2020-05/tgl1cv0o_fish-cutlet_625x300_05_May_20.jpg?im=FaceCrop,algorithm=dnn,width=384,height=384" },
     ];
-
+    
     return (
-        <div id={scrollspyHeading4} className="container py-5 col-xs-6">
-            <h2 data-aos="zoom-out-down" className="text-center mt-5">Nutrition Plans</h2>
+        <div className="container py-5 col-xs-6">
+            <h2 className="text-center mb-5">Nutrition Plans</h2>
+
             <div className="row">
                 <div className="col-md-6">
                     <h3 className="mb-4 text-center">Breakfast</h3>
@@ -166,8 +167,8 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
                 </div>
             </div>
 
-
-
+          
+            
             {/* Modals */}
             <Modal id="breakfastVegModal" title="Vegetarian Breakfast Options" options={breakfastVegOptions} />
             <Modal id="breakfastNonVegModal" title="Non-Vegetarian Breakfast Options" options={breakfastNonVegOptions} />
@@ -179,41 +180,41 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
             <Modal id="snacksNonVegModal" title="Non-Vegetarian Snacks Options" options={snacksNonVegOptions} />
 
             <div className="container py-5">
-  <h2 data-aos="zoom-out-down" className="text-center mb-5">Supplements</h2>
+  <h2 className="text-center mb-5">Supplements</h2>
   <div className="row justify-content-between">
     <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '23rem'}}>
       <img className="card-img-top" src="https://www.getsupp.com/static/media/__resized/images/products/SI8PNAE7EP6K7MS9H-f8f64806-2e4b-4e62-b463-386d96ad184a-thumbnail_webp-1080x1080-70.webp" alt="Whey Protein" />
-      <div className="card-body d-flex flex-column justify-content-center align-items-center ">
+      <div className="card-body d-flex flex-column  ">
         <h5 className="card-title">Whey Protein</h5>
-        <a className="btn btn-primary mt-5" target="_blank" rel="noopener noreferrer" href="https://www.getsupp.com/muscleblaze-beginners-whey-protein-_-skimmed-milk-powder-whey-protein-concentrate-for-faster-muscle-recovery-and-improved-strength/RODHGFS4OE/sp?gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxUeA1V8Re7ko42DIfkZfepnkr1CtVHriw4lmTznbSXo5PJfvudKMWxoCSRQQAvD_BwE" >Buy Now</a>
+        <a className="btn btn-primary d-flex justify-content-center align-items-center mt-auto" target="_blank" rel="noopener noreferrer" href="https://www.getsupp.com/muscleblaze-beginners-whey-protein-_-skimmed-milk-powder-whey-protein-concentrate-for-faster-muscle-recovery-and-improved-strength/RODHGFS4OE/sp?gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxUeA1V8Re7ko42DIfkZfepnkr1CtVHriw4lmTznbSXo5PJfvudKMWxoCSRQQAvD_BwE" >Buy Now</a>
       </div>
     </div>
     <div className="card mb-3 col-sm-3" style={{ width: '15rem',height: '23rem' }}>
       <img className="card-img-top" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTb5-ULaBAiEo1_FjBFJ1mznx3Vr5VhV4tupohRGyPq8-YW8_NZcY3_GqWjNp2KVoG-WZVzNiNvEjlo5S0d70yC-KNCzuV97Ji_j3r0U-F2Ffa9pSPeoNvdAp_3ypfv8h_nYJQcZnqT6g&usqp=CAc" alt="Creatine Monohydrate" />
-      <div className="card-body d-flex flex-column justify-content-center align-items-center">
+      <div className="card-body d-flex flex-column">
         <h5 className="card-title">Creatine Monohydrate</h5>
-        <a className="btn btn-primary mt-4" target="_blank" rel="noopener noreferrer" href="https://www.muscleblaze.com/sv/muscleblaze-creatine-monohydrate-creamp/SP-33852?navKey=VRNT-63864&utm_source=google&utm_medium=cpc&utm_campaign=MB.com_Creatine_ATL_PMAX_06052024&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxctA0E6pah3kSICw2PLMUcJ0PmWctu4Ae5oyjGL7pFgUbaat8AtGqBoCzS4QAvD_BwE" >Buy Now</a>
+        <a className="btn btn-primary d-flex justify-content-center align-items-center mt-auto" target="_blank" rel="noopener noreferrer" href="https://www.muscleblaze.com/sv/muscleblaze-creatine-monohydrate-creamp/SP-33852?navKey=VRNT-63864&utm_source=google&utm_medium=cpc&utm_campaign=MB.com_Creatine_ATL_PMAX_06052024&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxctA0E6pah3kSICw2PLMUcJ0PmWctu4Ae5oyjGL7pFgUbaat8AtGqBoCzS4QAvD_BwE" >Buy Now</a>
       </div>
     </div>
     <div className="card mb-3 col-sm-3" style={{ width: '15rem', height: '23rem'}}>
       <img className="card-img-top" src="https://img7.hkrtcdn.com/20569/prd_2056826-HealthKart-HK-Vitals-Multivitamin-with-MultimineralTaurine-Ginseng-Extract-90-tablets-Unflavoured_o.jpg" alt="Multivitamins Tablets" />
-      <div className="card-body d-flex flex-column justify-content-center align-items-center ">
+      <div className="card-body d-flex flex-column">
         <h5 className="card-title">Multivitamins Tablets</h5>
-        <a className="btn btn-primary mt-4" target="_blank" rel="noopener noreferrer" href="https://www.healthkart.com/sv/healthkart-hk-vitals-multivitamin-with-multimineral/SP-39873?navKey=VRNT-77418&utm_source=google&utm_medium=cpc&utm_campaign=_BR_HK.com_MB_BTL_PMAX_11052023&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQAFMpJfDLXl6mu5Zmi0xBEX9HkL8RBpAMz8YXoVFcrjtClYjiORrhoCijwQAvD_BwE" >Buy Now</a>
+        <a className="btn btn-primary d-flex justify-content-center align-items-center mt-auto" target="_blank" rel="noopener noreferrer" href="https://www.healthkart.com/sv/healthkart-hk-vitals-multivitamin-with-multimineral/SP-39873?navKey=VRNT-77418&utm_source=google&utm_medium=cpc&utm_campaign=_BR_HK.com_MB_BTL_PMAX_11052023&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQAFMpJfDLXl6mu5Zmi0xBEX9HkL8RBpAMz8YXoVFcrjtClYjiORrhoCijwQAvD_BwE" >Buy Now</a>
       </div>
     </div>
     <div className="card mb-3 col-sm-3" style={{ width: '15rem',height: '23rem' }}>
       <img className="card-img-top" src="https://nisupplements.com/cdn/shop/products/bc1_800x.png?v=1669727789" alt="Branched-chain amino acids (BCAAs)" />
-      <div className="card-body d-flex flex-column justify-content-center align-items-center ">
+      <div className="card-body d-flex flex-column ">
         <h5 className="card-title">Branched-chain amino acids (BCAAs)</h5>
-        <a className="btn btn-primary mt-1" target="_blank" rel="noopener noreferrer" href="https://boltnutritions.com/products/bcaa?variant=47684240867602&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxc7ekF8-Ubqp8pLJMrevDHXvhDESl3hmID6EzWrdDJrDIg0UGbHp4hoCSFwQAvD_BwE" >Buy Now</a>
+        <a className="btn btn-primary d-flex justify-content-center align-items-center mt-auto" target="_blank" rel="noopener noreferrer" href="https://boltnutritions.com/products/bcaa?variant=47684240867602&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxc7ekF8-Ubqp8pLJMrevDHXvhDESl3hmID6EzWrdDJrDIg0UGbHp4hoCSFwQAvD_BwE" >Buy Now</a>
       </div>
     </div>
     <div className="card mb-3 col-sm-6" style={{ width: '15rem',height: '23rem' }}>
       <img className="card-img-top" src="https://bigmusclesnutrition.com/cdn/shop/files/Front_1.png?v=1697707469c" alt="Beta-alanine" />
-      <div className="card-body d-flex flex-column justify-content-center align-items-center " >
+      <div className="card-body d-flex flex-column" >
         <h5 className="card-title">Beta-alanine</h5>
-        <a className="btn btn-primary mt-5" target="_blank" rel="noopener noreferrer" href="https://bigmusclesnutrition.com/products/beta-alanine?variant=33430176956515&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=Google&utm_medium=cpc&utm_campaign=Sok_Pmax_TRoAS_290422&utm_content=&utm_term=&placement=&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQWzTiXFlumWMApJEM1oqj583CtNqutq9iDsOujwMWFuHAjU1qJXxhoCujMQAvD_BwE">Buy Now</a>
+        <a className="btn btn-primary d-flex justify-content-center align-items-center mt-auto" target="_blank" rel="noopener noreferrer" href="https://bigmusclesnutrition.com/products/beta-alanine?variant=33430176956515&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=Google&utm_medium=cpc&utm_campaign=Sok_Pmax_TRoAS_290422&utm_content=&utm_term=&placement=&gad_source=1&gclid=CjwKCAjw-O6zBhASEiwAOHeGxQWzTiXFlumWMApJEM1oqj583CtNqutq9iDsOujwMWFuHAjU1qJXxhoCujMQAvD_BwE">Buy Now</a>
       </div>
     </div>
   </div>
@@ -221,7 +222,7 @@ const NutritionPlans = ({ scrollspyHeading4 }) => {
 
 
         </div>
-
+    
     );
 };
 
