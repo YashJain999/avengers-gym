@@ -1,3 +1,4 @@
+
 // src/Packages.js
 import React from "react";
 import "./Packages.css";
@@ -17,7 +18,7 @@ const Packages = ({scrollspyHeading5}) => {
         </ul>
       </div>
       <div className="packages-container">
-        <table className="table table-hover table-dark table-responsive table-borderless">
+        <table className="table table-hover table-light table-responsive table-borderless">
         <caption><sup>1</sup> Unlimited access to yoga, Zumba, Pilates, spinning, and other group classes. <br />
         <sup>2</sup> Secure locker facilities for storing personal belongings during workouts. <br /></caption>
           <thead>
@@ -77,7 +78,7 @@ const Packages = ({scrollspyHeading5}) => {
               <td><i className="pricing">₹2,000</i></td>
               <td><i className="pricing">₹5,500</i></td>
               <td><i className="pricing">₹20,000</i></td>
-              <td><i className="pricing">₹35,000</i></td>
+              <td><i className="pricing"><s>₹40,000</s>  ₹35,000 (Limited Period Offer)</i></td>
             </tr>
           </tbody>
         </table>
